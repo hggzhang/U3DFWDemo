@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Net">
+      <UniqueIdentifier>{fd54955e-2c6b-435a-97a4-6c00e3648013}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Net\Socket">
+      <UniqueIdentifier>{cf01d75e-4559-470c-bee1-284e5f9f2b4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Net\Socket\Private">
+      <UniqueIdentifier>{6c8d5a85-f976-446a-a93f-515e49379bf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Net\Socket\Public">
+      <UniqueIdentifier>{b89dfb58-a501-49e7-bbc5-99da13a76caf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Net\Public">
+      <UniqueIdentifier>{fc1aeb73-f6d3-4371-a157-c7a836256881}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Net\Private">
+      <UniqueIdentifier>{6539b650-7816-41a6-9e61-211d0094d62d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lua">
+      <UniqueIdentifier>{1a205442-80bc-432e-a722-e81157340eca}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Net\Worker.cpp">
+      <Filter>Net\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Net\ConnWriter.cpp">
+      <Filter>Net\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Net\LuaAPI.cpp">
+      <Filter>Net\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Net\Service.cpp">
+      <Filter>Net\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Net\SocketWorker.cpp">
+      <Filter>Net\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Net\Socket\SocketAddress.cpp">
+      <Filter>Net\Socket\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Net\Socket\SocketAddressFactory.cpp">
+      <Filter>Net\Socket\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Net\Socket\SocketMgr.cpp">
+      <Filter>Net\Socket\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Net\Socket\TCPSocket.cpp">
+      <Filter>Net\Socket\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="NetHeader.cpp">
+      <Filter>Net\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketHeader.cpp">
+      <Filter>Net\Socket\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="UDPSocket.cpp">
+      <Filter>Net\Socket\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\lapi.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\lauxlib.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\lbaselib.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\lbitlib.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\lcode.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\lcorolib.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\lctype.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\ldblib.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\ldebug.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\ldo.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\ldump.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\lfunc.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\lgc.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\linit.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\liolib.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\llex.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\lmathlib.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\lmem.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\loadlib.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\lobject.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\lopcodes.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\loslib.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\lparser.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\lstate.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\lstring.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\lstrlib.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\ltable.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\ltablib.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\ltm.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\lua.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\luac.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\lundump.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\lutf8lib.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\lvm.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd\lua-5.3.5\src\lzio.c">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Net\Engine.cpp">
+      <Filter>Net\Private</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Net\Conn.h">
+      <Filter>Net\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Net\ConnWriter.h">
+      <Filter>Net\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Net\LuaAPI.h">
+      <Filter>Net\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Net\Msg.h">
+      <Filter>Net\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Net\Service.h">
+      <Filter>Net\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Net\Worker.h">
+      <Filter>Net\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Net\Socket\SocketAddress.h">
+      <Filter>Net\Socket\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Net\Socket\SocketAddressFactory.h">
+      <Filter>Net\Socket\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Net\Socket\SocketHeader.h">
+      <Filter>Net\Socket\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Net\Socket\SocketMgr.h">
+      <Filter>Net\Socket\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="SpinLock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RWLock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Net\SocketWorker.h">
+      <Filter>Net\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Net\Socket\TCPSocket.h">
+      <Filter>Net\Socket\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="NetHeader.h">
+      <Filter>Net\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="UDPSocket.h">
+      <Filter>Net\Socket\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd\lua-5.3.5\src\lapi.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd\lua-5.3.5\src\lauxlib.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd\lua-5.3.5\src\lcode.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd\lua-5.3.5\src\lctype.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd\lua-5.3.5\src\ldebug.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd\lua-5.3.5\src\ldo.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd\lua-5.3.5\src\lfunc.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd\lua-5.3.5\src\lgc.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd\lua-5.3.5\src\llex.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd\lua-5.3.5\src\llimits.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd\lua-5.3.5\src\lmem.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd\lua-5.3.5\src\lobject.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd\lua-5.3.5\src\lopcodes.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd\lua-5.3.5\src\lparser.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd\lua-5.3.5\src\lprefix.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd\lua-5.3.5\src\lstate.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd\lua-5.3.5\src\lstring.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd\lua-5.3.5\src\ltable.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd\lua-5.3.5\src\ltm.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd\lua-5.3.5\src\lua.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd\lua-5.3.5\src\lua.hpp">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd\lua-5.3.5\src\luaconf.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd\lua-5.3.5\src\lualib.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd\lua-5.3.5\src\lundump.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd\lua-5.3.5\src\lvm.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd\lua-5.3.5\src\lzio.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Net\Engine.h">
+      <Filter>Net\Public</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

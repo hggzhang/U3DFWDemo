@@ -1,0 +1,8 @@
+
+[
+    "Assets/Lua/Core",
+    "Assets/Lua/LuaFramework",
+    "Assets/GameRes/UI",
+    "Assets/GameRes/Image",
+    "Assets/Lua/Game"
+]
