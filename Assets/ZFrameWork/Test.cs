@@ -78,46 +78,46 @@ public class Test : MonoBehaviour
             });
         }
 
-        if (GUI.Button(new Rect(500, 500, 200, 50), "¼ì²é×ÊÔ´¸üÐÂ"))
+        if (GUI.Button(new Rect(500, 500, 200, 50), "ï¿½ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½ï¿½ï¿½"))
         {
             HotUpdateMgr.Inst.Init();
             HotUpdateMgr.Inst.CheckUpdate();
         }
 
-        if (GUI.Button(new Rect(500, 700, 200, 50), "¿ªÊ¼ÏÂÔØ"))
+        if (GUI.Button(new Rect(500, 700, 200, 50), "ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½"))
         {
             HotUpdateMgr.Inst.StartDownLoad();
         }*/
 
 
-        if (GUI.Button(new Rect(100, 500, 200, 50), "³õÊ¼»¯ Net"))
-        {
-            NetMgr.Inst.Init();
-            NetMgr.Inst.Begin();
-        }
+        // if (GUI.Button(new Rect(100, 500, 200, 50), "ï¿½ï¿½Ê¼ï¿½ï¿½ Net"))
+        // {
+        //     NetMgr.Inst.Init();
+        //     NetMgr.Inst.Begin();
+        // }
 
-        if (!isLogin)
-        {
-            if (GUI.Button(new Rect(100, 700, 200, 50), "·¢ËÍÏûÏ¢²âÊÔ"))
-            {
-                var msg = new MsgLogin();
-                var str = JsonUtility.ToJson(msg);
-                Debug.Log("Send = " + str);
-                NetMgr.Inst.AddNetMsgCB("MsgLoginNtf", (MsgBase msg) =>
-                {
-                    var ntfMsg = (MsgLoginNtf)msg;
-                    if (ntfMsg != null)
-                    {
-                        var code = ntfMsg.code;
-                        ZLogger.Log("msg handle: code = " + code);
-                        isLogin = code == 1;
-                    }
-                });
-                NetMgr.Inst.Send(msg);
-            }
-        }
-        else
-            GUI.Label(new Rect(100, 700, 200, 50), "µÇÂ¼³É¹¦");
+        // if (!isLogin)
+        // {
+        //     if (GUI.Button(new Rect(100, 700, 200, 50), "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½"))
+        //     {
+        //         var msg = new MsgLogin();
+        //         var str = JsonUtility.ToJson(msg);
+        //         Debug.Log("Send = " + str);
+        //         NetMgr.Inst.AddNetMsgCB("MsgLoginNtf", (MsgBase msg) =>
+        //         {
+        //             var ntfMsg = (MsgLoginNtf)msg;
+        //             if (ntfMsg != null)
+        //             {
+        //                 var code = ntfMsg.code;
+        //                 ZLogger.Log("msg handle: code = " + code);
+        //                 isLogin = code == 1;
+        //             }
+        //         });
+        //         NetMgr.Inst.Send(msg);
+        //     }
+        // }
+        // else
+        //     GUI.Label(new Rect(100, 700, 200, 50), "ï¿½ï¿½Â¼ï¿½É¹ï¿½");
     }
 
 
